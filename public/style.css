@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: red;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(236, 135, 135);
+}
+.container{
+    margin-top: 50px;
+    padding: 10px;
+    border: 2px solid rosybrown;
+    background-color: wheat;
+    border-radius: 50px;
+}
+.username{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    padding: auto;
+    margin-top: 10px;
+}
+.post{
+    font-size: medium;
+    padding: auto;
+    margin-top: 10px;
+    font-family:sans-serif;
+    color: rgb(85, 37, 228);
+}
+button{
+    border: 2px solid brown;
+    border-radius: 5px;
+}
+a{
+    background-color: rgb(236, 66, 66);
+    color: rgb(10, 8, 8);    
+}

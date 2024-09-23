@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creting Quora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="heading">Quora App</h1>
+    <%for(let post of posts){%>
+        <div class="container">
+            <h2 class="username">@<%=post.username%></h2>
+            <h3 class="post"><%= post.post %></h3>
+        </div>
+        <button>
+        <a href="http://localhost:8080/posts/<%=post.id %>"> Show in Detail</a>    
+        </button>
+        <button>
+            <a href="http://localhost:8080/posts/<%=post.id %>/edit">Edit Details</a>
+        </button>
+        <br>
+        <form action="/posts/<%=post.id%>?_method=DELETE" method="post">
+        <button> Delete It!!</button>
+        </form> 
+    <%}%>
+    <div style="display: flex;justify-content:center;align-items: center;">
+     <a href="http://localhost:8080/posts/new">
+      <button style="height: 50px ; width: 200px; color: rgb(243, 239, 239); background-color: rgb(5, 5, 5); font-size: medium; display: flex;justify-content:center;align-items: center;   font-family: Arial, Helvetica, sans-serif; ">Create New</button>  
+     </a>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
